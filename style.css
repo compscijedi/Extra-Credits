@@ -7,7 +7,7 @@
     justify-content: flex-end !important;
     flex-direction: column !important;
     font-size: 24px !important;
-    background: rgba(17,11,44,1);
+    background: rgba(0,0,0,0);
 }
 .chat_line {
     color: rgba(255, 255, 255, 1) !important;
@@ -34,7 +34,7 @@
 }
 /* This block controls the messages */
 .chat_line span:last-child {
-    background: rgba(0,0,0,0);
+    background: rgba(17,11,44,0.75);
     border: 2px solid #43fe39;
     border-radius: 10px 10px 10px 10px;
     box-sizing: border-box !important;
