@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+::-webkit-scrollbar {
+    visibility: hidden !important;
+}
+#chat_box {
+    display: flex !important;
+    justify-content: flex-end !important;
+    flex-direction: column !important;
+    font-size: 24px !important;
+    background: rgba(17,11,44,1);
+}
+.chat_line {
+    color: rgba(255, 255, 255, 1) !important;
+    border: 0 !important;
+    font-size: unset !important;
+    margin-bottom: 10px;
+    animation: 0.3s ease-out slideIn;
+    vertical-align: middle;
+    position: relative;
+}
+.chat_line span:not:last-child {
+    position:absolute;
+    left: 10px;
+    top: 0;
+    padding: 7px 12px;
+    line-height: 15px;
+    border-radius: 8px;
+    z-index: 1;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+}
+.chat_line span:last-child {
+    border: 2px solid #43fe39;
+    border-radius: 10px 10px 10px 10px;
+    color: #fff;
+    background: rgba(0,0,0,0);
+    text-shadow:#000 0px 0px 0px;
+    padding: 20px 18px 15px 18px;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block !important;
+    font-family: Roboto;
+    font-size: 24px;
+    word-break: break-word !important;
+    line-height: 1.25;
+    position: relative;
+    min-height: 20px;
+    box-sizing: border-box !important;
+}
+.chat_line .tag {
+    float: left;
+    margin-right:5px;
+    width: 24px !important;
+    height: 24px !important;
+}
+.chat_line .emoji,
+.chat_line .emoticon {
+    vertical-align: middle;
+    width:24px;
+    height:24px;
+    margin-bottom: 0 !important;
+}
+.chat_line span.nick {
+    float:left;
+    line-height:21px;
+}
+.chat_line span.colon {
+    display: none;
+}
+.chat_line .message {
+    font-weight: 700 !important;
+    display: unset !important;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
