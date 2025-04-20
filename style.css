@@ -9,6 +9,7 @@ body {
     --comment-border-radius: 10px;
     --comment-font-size: 24px;
     --author-border-radius: 10px;
+    --author-bg-color:  rgba(17,44,11,0.75);
     --author-font-size: 24px;
     --font-family:  "Roboto", Roboto, serif;
 }
@@ -16,14 +17,22 @@ body {
     animation: 0.3s ease-out slideIn;
     text-shadow:#000 1px 0px 5px;
 }
+.hl-firstline {
+    border: 2px solid #43fe39;
+    border-radius: 10px 10px 10px 10px;
+}
 .hl-name {
     padding: 2px 10px !important;
+    text-shadow:#000 1px 0px 5px;
 }
 .bubble {
     border: 2px solid #43fe39;
     border-radius: 10px 10px 10px 10px;
     background: rgba(17,44,11,0.75);
     text-shadow:#000 1px 0px 5px;
+    /* PREP FOR SOLID COLOR AUTHOR BUBBLES
+    margin-top:-10px;
+    padding-top:5px;*/
 }
 
 @font-face {
